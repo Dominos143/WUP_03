@@ -58,6 +58,11 @@ model1 <- aov(alcohol~Seat,data=mydata)
 summary.aov(model1)
 ```
 
+```{r}
+plot(TukeyHSD(model1,conf.level = 0.95))
+```
+
+
 
 ## Conclusions
 
