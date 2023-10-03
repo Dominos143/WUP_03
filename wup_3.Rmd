@@ -12,7 +12,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ```{r include=FALSE}
 require(tidyverse)
 require(tigerstats)
-davisdata <- read.csv(file="UCDavis.csv")
+mydata <- read.csv(file="UCDavis.csv")
 ```
 ## Our Goal is to answer this question Is there a difference between the alcohol consumed between the row
 ## you choose to sit in??
@@ -24,8 +24,12 @@ basicCN <- ggplot(davisdata,aes(y=alcohol,x=Seat))
 ```
 ## Now add in boxplot
 
-```{r}
-basicCN + geom_boxplot()
+``` {r include = TRUE, echo = FALSE}
+ggplot(data = mydata, aes(x = alcohol, y = Seat) ) +
+geom_boxplot (notch=FALSE,outlier.colour = "red",outlier.size = 2, fill = "darkgray") +
+stat_boxplot (geom ='errorbar') +
+labs (x = "alcohol", y = "Seat", title = "Alcohol consumed by seating") +
+theme (plot.title = element_text(hjust = 0.5, size = 16) )
 ```
   
   
