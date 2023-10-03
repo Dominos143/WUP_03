@@ -41,7 +41,14 @@ basicCN + geom_boxplot(notch=TRUE,outlier.color = "red") + stat_boxplot(geom ='e
 
 ## Numerical Summarys 
 
+``` {r include = TRUE, echo = FALSE}
+favstats(alcohol~Seat,data=mydata)
+```
+
+
 ## Inferential Tests
+
+
 
 ## Conclusions
 
