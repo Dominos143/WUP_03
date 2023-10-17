@@ -47,6 +47,8 @@ theme (plot.title = element_text(hjust = 0.5, size = 16) )
 basicCN + geom_boxplot(notch=FALSE,outlier.color = "red") + stat_boxplot(geom ='errorbar') + labs(title="Fancy notch boxplot \n with 2 lines")
 ```
 
+This box plot shows that the people seated in the back row consumed more alcohol in the median of the data with a much wider range of alcohol consumption. The people seated in the middle consumed less alcohol with the exception of 6 outliers when comparing the median of its alcohol consumption to the median of the alcohol consumption for the back row. The front row seemingly consumed the least amount of alcohol with the exception of two outliers as this group had the lowest median and smallest range of the three seating arrangements.
+
 ## Numerical Summarys 
 
 ``` {r include = TRUE, echo = FALSE}
