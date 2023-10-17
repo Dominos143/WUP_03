@@ -17,9 +17,13 @@ mydata <- read.csv(file="UCDavis.csv")
 ## Our Goal is to answer this question Is there a difference between the alcohol consumed between the row
 ## you choose to sit in??
 
+
+The problem involving the amount of alcohol consumed and the choice of seat is a numerical~categorical problem as looking at the davisdata allows us to see that alcohol is categorized as a numerical variable and Seat is categorized as a character variable. Since this is the case, I will be using the CandP helper files with the main use of the Numerical~Cat file. We will be comparing the amount of alcohol consumed between the front, middle, and back rows.
+
 $H_0$: There is no difference between the average number of drinks imbibed between people conditioned on the row they sit in.
 
-$H_A$: The average number drinks is different between at least two rows.  
+$H_A$: The average number drinks is different between at least two rows. 
+
 
 ## Now with ggplot - first select the basic data
 
