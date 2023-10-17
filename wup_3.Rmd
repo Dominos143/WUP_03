@@ -62,8 +62,9 @@ summary.aov(model1)
 plot(TukeyHSD(model1,conf.level = 0.95))
 ```
 
+The TukeyHSD  test shows that the there is a significant difference between the middle and back seats with alcohol level and a significant difference between the front and back row with alcohol level. There is not a significant difference between the middle and front rows with alcohol level as the test is run with a 99% confidence interval.
 
 
 ## Conclusions
 
-
+Looking at the data and analyzing it through numerical summaries and the box plots allow us to see the difference in alcohol consumption between the different seating rows. It was found that there was a significant difference in alcohol consumption when comparing the middle-back rows and the front-back rows. This confirms the alternate hypothesis that the average number of drinks is different between two rows as confirmed by the TukeyHSD plot with a 99% confidence interval.
