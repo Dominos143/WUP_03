@@ -49,7 +49,7 @@ basicCN + geom_boxplot(notch=FALSE,outlier.color = "red") + stat_boxplot(geom ='
 favstats(alcohol~Seat,data=mydata)
 ```
 
-
+The favstats data shows that the mean alcohol consumption is significantly higher in the Back row group when compared to the Front and Middle rows. The Middle row has an alcohol consumption closer to the Front row with a median of about 3.3 but, the Front row has the mean of the lowest alcohol consumption of about 1.8. The arrangements of the seating and their correlation to alcohol consumption is consistent across the mean and the median as the median arranged from least to greatest amount of alcohol consumption is Front(0), Middle(1), and Back(4).
 
 ## Inferential Tests
 
